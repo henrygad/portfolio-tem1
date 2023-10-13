@@ -4,29 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+
     <!-- site icon -->
-    <link rel="icon" href="images/logo.svg">
+    <link rel="icon" href="images/icon.png">
     <!-- end of site icon -->
 
-    <!-- goole font -->
+    <!-- google font style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700;900&family=Lexend:wght@400;700;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,300;1,400;1,500;1,600;1,800;1,900&family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" 
     rel="stylesheet">
-    <!-- end of google font -->
+    <!-- end of google font styls -->
      
     <!--local css style -->
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/skils.css">
+    <link rel="stylesheet" href="css/project-stools.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/reviews.css">
+    <link rel="stylesheet" href="css/blogs.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/toggle-nav.css">
+    <link rel="stylesheet" href="css/effects.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- end of local css style -->
+
 </head>
-<body>
+<body id="home">
     <div class="header-and-nav">
         <header>
             <div>
-                <img src="images/logo.svg" alt="site logo">
+                <a href="#home">
+                    <img src="images/logo.svg" alt="site logo">
+                </a>
             </div>
         </header>
         <nav>
+
+            <!-- toggle navigation div -->
+            <div  class="toggle-nav" >
+                <button type="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <!-- end of toggle nav -->
+
+            <!-- navigation list -->
             <ul>
                 <a href="#home"><li>home</li></a>
                 <a href="#about"><li>about</li></a>
@@ -34,26 +64,346 @@
                 <a href="#services"><li>services</li></a>
                 <a href="#portfolio"><li>portfolio</li></a>
                 <a href="#blog"><li>blog</li></a>
-                <a href="#contacts"><li>contacts</li></a>
+                <a href="#contact"><li>contacts</li></a>
             </ul>
+            <!-- end of navigation list -->
+
         </nav>
     </div>
     <main>
-        <section class="hero-container">
+
+        <!-- hero section -->
+        <section class="hero-container" id="home">
             <div class="hero-content text-and-btn ">
                 <h1>victory deo</h1>
                 <h2><span>I am</span>Software Engineer</h2>
                 <div class="hero-btn">
-                    <button>contact</button>
+                    <button onclick="window.location.href=('#contact') " target="_blank" >contact</button>
                     <button>resume</button>
                 </div>
             </div>
             <div class="hero-content  advater">
-                <img src="images/Rectangle 1.svg" alt="">
                 <img src="images/advater.svg" alt="">
             </div>
         </section>
+        <!-- end of hero section -->
+
+        <!-- about me section -->
+        <section class="about-container" id="about">
+            <div class="about-img">
+                <img src="images/me-icon.svg" alt="">
+            </div>
+            <div class="about-text-and-btn">
+                <h3>about me</h3>
+                <p>
+                I am Victory Deo Full Stack Congolese developer with 4 years of
+                experience. My passion for web development began in 2018 and from 
+                then on, I did everything I could to break into this path,
+                while having fun on the various projects developed. 
+                My experience acquired over the course of the projects allows 
+                me to better understand the expectations of a client and to respond 
+                precisely to the need requested according to the field of activity.
+                </p>
+                <button>resume</button>
+            </div>
+        </section>
+        <!-- end of about me section -->
+
+        <!-- skils section -->
+        <section class="skills-container" id="skills">
+            <div class="skill-content">
+                <h3>skills</h3>
+                <div class="skill-bar">
+                    <p>Font-end</p>
+                    <div class="skill front-end"></div>
+                </div>
+                <div class="skill-bar">
+                    <p>Back-end</p>
+                    <div class="skill back-end"></div>
+                </div>
+                <div class="skill-bar">
+                    <p>Ui/UX</p>
+                    <div class="skill ui-ux"></div>
+                </div>
+                <div class="skill-bar">
+                    <p>SCRUM project management</p>
+                    <div class="skill scrum-p-m"></div>
+                </div>
+                <div class="skill-bar">
+                    <p>DevOps</p>
+                    <div class="skill devops"></div>
+                </div>
+            </div>
+            <div class="skill-img">
+                <img src="images/PngItem.svg" alt="">
+            </div>
+        </section>
+        <!-- end of skils section -->
+
+        <!-- project stools section -->
+        <section class="project-stools-container">
+            <div class="project-stools-grid">
+                <div><img src="images/tools-icons/🦆 icon _HTML 5 Logo_.png" alt=""></div>
+                <div><img src="images/tools-icons/🦆 icon _Alternate CSS3 Logo_.png" alt=""></div>
+                <div><img src="images/tools-icons/🦆 icon _Sass_.png" alt=""></div>
+                <div><img src="images/tools-icons/🦆 icon _Bootstrap_.png" alt=""></div>
+                <div><img src="images/tools-icons/🦆 icon _PHP_.png" alt=""></div>
+                <div><img src="images/tools-icons/🦆 icon _JavaScript (JS) Square_.png" alt=""></div>
+                <div><img src="images/tools-icons/🦆 icon _WordPress Logo_.png" alt=""></div>
+                <div><img src="images/tools-icons/🦆 icon _Laravel_.png" alt=""></div>
+                <div><img src="images/tools-icons/🦆 icon _Figma_.png" alt=""></div>
+                <div><img src="images/tools-icons/🦆 icon _Docker_.png" alt=""></div>
+                <div><img src="images/tools-icons/🦆 icon _Node.js_.png" alt=""></div>
+                <div><img src="images/tools-icons/🦆 icon _GitHub_.png" alt=""></div>
+                <div><img src="images/tools-icons/🦆 icon _React_.png" alt=""></div>
+                <div><img src="images/tools-icons/🦆 icon _Amazon Web Services (AWS)_.png" alt=""></div>
+                <div><img src="images/tools-icons/MongoDB.png" alt=""></div>
+            </div>
+        </section>
+        <!-- end of project stools section -->
+
+        <!-- services section -->
+        <section class="services-container" id="services">
+            <div class="container-title">
+                <h3>services</h3>
+            </div>
+            <div class="services">
+                <div class="services-content first">
+                    <img src="images/tools-icons/Web design.svg" alt="">
+                    <h4>UI/UX design</h4>
+                    <p>I design pleasant and useful interfaces to improve the user
+                         experience
+                    </p>
+                </div>
+                <div class="services-content second">
+                    <img src="images/tools-icons/Desktop computer with headset.svg" alt="">
+                    <h4>application desktop</h4>
+                    <p>I develop desktop software that works on Windows, 
+                        MacOS and Lunix
+                    </p>
+                </div>
+                <div class="services-content third">
+                    <img src="images/tools-icons/world web icon (1).svg" alt="">
+                    <h4>application web</h4>
+                    <p>I develop interactive, robust,
+                         dynamic and responsive websites
+                    </p>
+                </div>
+                <div class="services-content fourth">
+                    <img src="images/tools-icons/mobile banking transaction.svg" alt="">
+                    <h4>application mobile</h4>
+                    <p>I develop cross-platform mobile 
+                        applications.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- end of services section -->
+
+        <!-- portfolio section -->
+        <section class="portfolio-container" id="portfolio">
+            <div class="portfolio-slider-container">
+                <div class="slider-nav previous"><img src="images/portfolio-img/chevron-left.svg" alt=""></div>
+                <div class="project-slides">
+                    <div class="slide  back left">
+                        <img src="images/portfolio-img/Frame 15.svg" alt="">
+                    </div>
+                    <div class="slide front center">
+                        <img src="images/portfolio-img/Frame 16.svg" alt="">
+                    </div>
+                    <div class="slide back right">
+                        <img src="images/portfolio-img/Frame 16.svg" alt="">
+                    </div>
+                </div>
+                <div class="slider-nav next"><img src="images/portfolio-img/chevron-right.svg" alt=""></div>
+            </div>
+        </section>
+        <!-- end of portfolio section -->
+
+        <!-- work experience section -->
+        <section class="experience-container">
+            <div class="experience-grid-container">
+                <div class="experience-content">
+                    <h4>4</h4>
+                    <h4>years</h4>
+                    <img src="images/experience-icons/Vector.svg" alt="">
+                </div>
+                <div class="experience-content">
+                    <h4>14</h4>
+                    <h4>projects</h4>
+                    <img src="images/experience-icons/Vector (1).svg" alt="">
+                </div>
+                <div class="experience-content">
+                    <h4>6</h4>
+                    <h4>client</h4>
+                    <img src="images/experience-icons/🦆 icon _Users_.svg" alt="">
+                </div>
+                <div class="experience-content">
+                    <h4>143</h4>
+                    <h4 class="text">mentees</h4>
+                    <img class="last-img" src="images/experience-icons/🦆 icon _User Graduate_.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- end of work experience section -->
+
+        <!-- client reviews section -->
+        <section class="reviews-container">
+            <div class="container-title"> <h3>what they say about me</h3></div>
+            <div class="reviews-slider">
+                <div class="slider-nav left"><img src="images/portfolio-img/chevron-left.svg" alt=""></div>
+                <div class="reviews-slides">
+                    <div class="slide back left">
+                        <div class="review-content">
+                           <img src="images/reviews/Ellipse 17.png" alt="">
+                           <h4>Hannah Schmitt</h4>
+                           <h4>Lead designer</h4>
+                           <img class="review-icon" src="images/reviews/clarity_block-quote-line.svg" alt="">
+                           <p>
+                           Lorem ipsum dolor sit amet, 
+                           consectetur adipiscing elit. Cursus nibh 
+                           mauris, nec turpis orci lectus 
+                           maecenas. Suspendisse sed magna 
+                           eget nibh in turpis. Consequat duis diam 
+                           lacus arcu. Faucibus venenatis 
+                           felis id augue sit cursus pellentesque 
+                           enim
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide front center">
+                        <div class="review-content">
+                           <img src="images/reviews/Ellipse 16.png" alt="">
+                           <h4>Hannah Schmitt</h4>
+                           <h4>Lead designer</h4>
+                           <img class="review-icon" src="images/reviews/clarity_block-quote-line.svg" alt="">
+                           <p>
+                           Lorem ipsum dolor sit amet, 
+                           consectetur adipiscing elit. Cursus nibh 
+                           mauris, nec turpis orci lectus 
+                           maecenas. Suspendisse sed magna 
+                           eget nibh in turpis. Consequat duis diam 
+                           lacus arcu. Faucibus venenatis 
+                           felis id augue sit cursus pellentesque 
+                           enim
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide back right">
+                        <div class="review-content">
+                           <img src="images/reviews/Ellipse 18 (1).png" alt="">
+                           <h4>Hannah Schmitt</h4>
+                           <h4>Lead designer</h4>
+                           <img class="review-icon" src="images/reviews/clarity_block-quote-line.svg" alt="">
+                           <p>
+                           Lorem ipsum dolor sit amet, 
+                           consectetur adipiscing elit. Cursus nibh 
+                           mauris, nec turpis orci lectus 
+                           maecenas. Suspendisse sed magna 
+                           eget nibh in turpis. Consequat duis diam 
+                           lacus arcu. Faucibus venenatis 
+                           felis id augue sit cursus pellentesque 
+                           enim
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="slider-nav right"><img src="images/portfolio-img/chevron-right.svg" alt=""></div>
+            </div>
+        </section>
+        <!-- end of client reviews section -->
+
+        <!-- blog section -->
+        <section class="blogs-container" id="blog">
+            <div class="container-title">
+                <h3>My last articles</h3>
+            </div>
+            <div class="blog">
+                <div class="blog-content first">
+                    <img src="images/blogs-img/Seated male programmer working with laptop.svg" alt="">
+                    <p class="blog-text">
+                    6 Proven Strategies to Get 
+                    More Followers on Twitter
+                    and Build Your Online
+                    Presence
+                    </p>
+                    <div class="bottom">
+                        <img src="images/blogs-img/clock.svg" alt="">
+                        <p>22/03/2023</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="blog-content second">
+                    <img src="images/blogs-img/Seated male programmer working with laptop.svg" alt="">
+                    <p class="blog-text">
+                    6 Proven Strategies to Get 
+                    More Followers on Twitter
+                    and Build Your Online
+                    Presence
+                    </p>
+                    <div class="bottom">
+                        <img src="images/blogs-img/clock.svg" alt="">
+                        <p>22/03/2023</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="blog-content last">
+                    <img src="images/blogs-img/Seated male programmer working with laptop.svg" alt="">
+                    <p class="blog-text">
+                    6 Proven Strategies to Get 
+                    More Followers on Twitter
+                    and Build Your Online
+                    Presence
+                    </p>
+                    <div class="bottom">
+                        <img src="images/blogs-img/clock.svg" alt="">
+                        <p>22/03/2023</p>
+                     </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- end of blog section -->
+
     </main>
-    <footer></footer>
+    <footer>
+        <!-- contact section -->
+        <section class="contact-container" id="contact">
+            <div class="contact-img">
+                <img src="images/contact--img/cta-2-1-92c17b59fa88d0f37a14bacdde164b49-removebg-preview 1.svg" alt="">
+            </div>
+            <div class="contact-content">
+                <div class="container-title">
+                    <h3>contact me</h3>
+                </div>
+                <div>
+                    <form action="infor.php">
+
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="John doe" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="jondoe@gmail.com" required>
+
+                        <label for="massage">Massage</label>
+                        <textarea name="massage" id="massage" rows="6" placeholder="Massage" required></textarea>
+                        
+                        <button type="submit">Contact me<img src="images/contact--img/Vector.svg" alt=""></button>
+                    </form>
+                </div> 
+                <div class="social-media-icons">
+                    <img src="images/contact--img/Vector (1).svg" alt="">
+                    <img src="images/contact--img/LinkedIn.svg" alt="">
+                    <img src="images/contact--img/Vector (2).svg" alt="">
+                    <img src="images/contact--img/GitHub.svg" alt="">
+                    <img src="images/contact--img/Vector (3).svg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- end of contact section -->
+
+    </footer>
 </body>
 </html>

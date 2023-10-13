@@ -1,0 +1,23 @@
+.project-stools-container{
+    height: 30vh !important;
+    justify-content: center;
+    background-color: var(---color-lightbrown);
+}
+.project-stools-container .project-stools-grid{
+    flex: 1 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 35%);
+    place-content: start;
+    padding-top: 1.5rem;
+}
+.project-stools-grid div{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.project-stools-grid div img{
+    flex-shrink: 0;
+    height: 50%;
+    object-fit: cover;
+}

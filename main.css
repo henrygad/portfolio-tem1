@@ -9,7 +9,8 @@
     ---color-lightblue: rgba(46, 124, 223, 1);
     ---color-fulltrans: rgba(0, 0, 0, 1);
     ---color-lightbrown: rgba(203, 197, 193, 0.35);
-    ---padding-3pg: 5%;
+    ---color-lighterbrown:  rgba(235, 219, 219, 1);
+    ---padding-3pg: 3%;
 }
 *{
     box-sizing: border-box;
@@ -23,152 +24,68 @@ body{
     padding-top: 10px;
     background-color: var(---color-white);
 }
-/*
-mensurements:
-  %: for weight and height,
-  vh: for height,
-  rem: element,
-  em: for fonts
-  px: for all
-  ;
- */
 
-/* hearder */
-.header-and-nav{
-    display: flex;
-    width: 100%;
-    height: 60px;
-    max-height: 10vh;
+h1,
+h2{
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
-.header-and-nav header{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 20%;
-    height: 100%;
-    padding-left: var(---padding-3pg);
-    /* background-color: green; */
-}
-header div{
-    height: 70%;
-}
-header div img{
-    height: 100%;
-    object-fit: cover;
-}
-.header-and-nav nav{
-    display: flex;
-    flex: 1 0;
-    height: 100%;
-    padding-right: 3%;
-}
-nav ul{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex: 1;
-    padding-left: 15%;
-    text-transform: uppercase;
-}
-nav ul a {
-    text-decoration: none;
-    flex-shrink: 0;
-}
-nav ul a li{
-    list-style: none;
-    color: var(---color-darkerblue);
-    font-family: var(---lexend);
-    font-weight: 600;
-    font-size: 1.1em;
-}
-/* end of header */
-
-/* hero section */
-.hero-container{
-    display: flex;
-    width: 100%;
-    max-height: 80vh;
-    padding-left: var(---padding-3pg);
-    background-color: var(---color-lightbrown);
-}
-.hero-container .hero-content,
-.hero-container .advater{
-    position: relative;
-    flex: 1;
-    flex-shrink: 0;
-    height: 70vh;
-}
-.hero-content.text-and-btn{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    transform: translateY(-10%);
-} 
-.text-and-btn h1{
+h1{
     font-family: var(---lexend-deca);
     text-transform: uppercase;
     font-size: 4em;
     font-weight: bolder;
     color: var(---color-darkblue);
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     stroke: rgba(0, 0, 0, 0.1);
     stroke-width: 1px;
-    margin-bottom: 10px;
 }
-.text-and-btn h2{
+h2{
     font-family: var(---roboto);
-    font-size: 2em;
+    font-size: 1.9em;
     font-weight: 500;
     color: var(---color-darkblue);
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 50px;
 }
-.text-and-btn h2 span{
-    color: var(---color-fulltrans);
-    margin-right: 10px ;
+h3,
+h4{
+    font-family: var(---lexend);
+    text-transform: uppercase;
+    font-size: 1.9em;
+    font-weight: 500;
 }
-.text-and-btn .hero-btn{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 300px;
+h3{
+    color: var(---color-darkblue);
 }
-.hero-btn button{
+h4{
+    color: var(---color-lightblue);
+}
+p{
+    font-family: var(---poppins);
+    font-size: 1.1em;
+}
+button{
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+}
+main button{
     text-transform: uppercase;
     font-family: var(---roboto);
-    font-size: 1em;
-    font-weight: 500;
-    width: 120px;
-    height: 40px;
+    padding: 12px 25px ;
     border: 1px solid var(---color-lightblue);
     border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.hero-btn button:nth-child(1){
-    color: var(---color-white);
-    background-color: var(---color-lightblue);
-}
-.hero-btn button:nth-child(2){
-    color: var(---color-lightblue);
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-/*  advater div*/
-.advater img{
-    position: absolute;
-}
-.advater img:nth-child(1){
-    top: 0;
-    right: -10%;
+main section,
+footer section{
+    position: relative;
+    display: flex;
+    height: 80vh;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    flex-wrap: wrap;
+    padding-right: var(---padding-3pg);
+    padding-left: var(---padding-3pg);
+    overflow: hidden;
 }
-.advater img:nth-child(2) {
-    top: 0;
-    left: -10%;
-    height: inherit;
-    object-fit: cover;
+ footer section{
+    background-color: var( ---color-lightblue);
 }
-
-/* end of hero section */

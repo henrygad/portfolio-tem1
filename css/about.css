@@ -1,0 +1,36 @@
+.about-container{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse !important;
+}
+.about-container .about-img{
+    position: relative;
+    width: 40%;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.about-img img{
+    object-fit: cover;
+    width: 70%;
+}
+.about-container .about-text-and-btn{
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    grid-row-gap: 4rem;
+}
+.about-text-and-btn h3{
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.about-text-and-btn p{
+    width: 40rem;
+}
+.about-text-and-btn button{
+    color: var(---color-white);
+    background-color: var(---color-lightblue);
+}

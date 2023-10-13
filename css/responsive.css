@@ -1,0 +1,783 @@
+/* screen break point 
+ ---xs: 0;
+ ---sm: 576px;
+ ---md: 768px;
+ ---lg: 992px;
+ ---xl: 1200px;
+ ---xxl: 1400px
+ */
+
+/* reponsive design for extra small screen size */
+@media (max-width: 575.99px) {
+      
+    /* responsive design for skills section for extra small screen size */
+    .skill-content p{
+        font-size: 1rem;
+    }
+
+    /* responsive design for project tool for  extra small screen size */
+    .project-stools-container{
+        height: 25vh !important;
+    }
+    .project-stools-grid div img{
+          height: 55% ;
+    }
+
+ /* responsive design for services section for extra small screen size */
+ .services-container{
+    height: 160vh !important;
+    }
+    .services .services-content{
+        width: 50% !important;
+        aspect-ratio: 4/4.5 !important;
+    }
+    .services .services-content h4{
+        font-size: 1rem;
+    }
+    .services-content.first,
+    .services-content.second{
+        margin-bottom: 0 !important;
+    }
+
+    /* responsive design for experience section for extra small screen size */
+    .experience-content h4{
+        font-size: 1rem;
+    }
+    .experience-content img{
+        height: 35% !important;
+    }
+    .experience-container {
+        height: 25vh !important;
+    }
+    .experience-container .last-img{
+        margin-top: -8%;
+    }
+
+    /* responsive design for reviews slider section for extra small screen size */
+
+    .reviews-container .container-title{
+        top: 10% !important;
+    }
+    .reviews-container .container-title h3{
+       font-size: 1rem;
+    }
+    .reviews-container .reviews-slider{
+       margin-bottom: -5%;
+    }
+
+    /* back */
+    .reviews-slides .slide.back .review-content{
+        height: 70%;
+        grid-row-gap: .5%;
+        top: 10%; 
+      }
+    .reviews-slides .slide.back  .review-content img:nth-child(1){
+        height: 14% !important;
+     }
+     .reviews-slides .slide.back .review-content h4:nth-child(2){
+       font-size: .3rem !important;
+   }
+   .reviews-slides .slide.back .review-content h4:nth-child(3){
+        font-size: .1rem !important;
+   }
+   .reviews-slides .slide.back .review-content .review-icon{
+       height: 5% !important;
+   }
+    .reviews-slides .slide.back  .review-content p{
+    font-size: .15rem !important;
+    }
+
+     /* front */
+     .reviews-slides .slide.front::after{
+        height: 55% !important;
+        top: 18% !important;
+     }
+     .reviews-slides .slide.front .review-content{
+        height: 90%;
+        grid-row-gap: .5%;
+        top: 5%; 
+      }
+    .reviews-slides .slide.front  .review-content img:nth-child(1){
+        height: 15% !important;
+     }
+     .reviews-slides .slide.front .review-content h4:nth-child(2){
+       font-size: .7rem !important;
+   }
+   .reviews-slides .slide.front .review-content h4:nth-child(3){
+     font-size: .5rem !important;
+     margin-bottom: 5% !important;
+   }
+   .reviews-slides .slide.front .review-content .review-icon{
+       height: 6% !important;
+       margin-bottom: -4%;
+   }
+    .reviews-slides .slide.front  .review-content p{
+        font-size: .3rem !important;
+    }
+
+    /* responsive design for blog section for extra small screen size */
+    .blogs-container{
+        height: 110vh !important;
+    }
+    
+    .blogs-container .container-title{
+        top: 5% !important;
+    }
+    .blogs-container .container-title  h3{
+       font-size: 1.5rem;
+    }
+     .blog .blog-content{
+        width: 43% !important;
+        aspect-ratio: 4/4.5;
+    }
+    .blog .blog-content.first{
+        margin-top: 8% !important;
+     }
+     .blog .blog-content.second{
+        margin-top: -5% !important;
+     }
+     .blog .blog-content.last{
+        margin-bottom: -10% !important;
+     }
+    .blog .blog-content img{
+        height: 32% !important;
+    }
+    .blog .blog-content p{
+        font-size: 0.6rem !important;
+    }
+    .blog .blog-content .blog-text{
+        font-size: .65rem !important;
+    }
+    .blog .blog-content .bottom{
+        width: 100px;
+    }
+
+    /* reponsive design for contact content for extar small screen size */
+    footer .contact-container{
+        height: 65vh !important;
+    }
+    .contact-content .container-title h3{
+        font-size: 1.4rem;
+    }
+    .contact-content .social-media-icons{
+        justify-content: end;
+    }
+    .contact-content .social-media-icons img{
+        width: 25% !important;
+        }
+    
+}
+
+
+
+/* responsive design for small and extar small screen size */
+@media (max-width: 768px){
+    /* globa for small screen size*/
+    h1{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    h3{
+        font-size: 1.6em;
+    }
+    h4{
+        font-size: 1.2em;
+    }
+    button{
+        font-size: .8em;
+    }
+    p{
+        font-size: .9em;
+    }
+
+  
+    /* responsive design for small screen size nav  */
+    .header-and-nav nav .toggle-nav{
+        display: flex;
+    }
+    nav ul{
+        display: none;  
+       }
+    .toggle-nav:hover ~ ul{
+        position: absolute;
+        top: 0;
+        left: -25%;
+        bottom: 0;
+        height: 100vh;
+        width: 50%;
+        background-color: var(---color-white);
+        padding-top: 4rem;
+        z-index: 100;
+
+       display: flex;
+       flex-direction: column;
+       justify-content: start;
+
+     }
+     .toggle-nav:hover ~ ul a{
+        flex: 0 0 8%;
+        width: 100%;
+    }
+    .toggle-nav:hover ~ ul a li{
+        width: 80%;
+        text-align: start;
+    }
+
+
+     /* responsive design for small screen size hero section  */
+    .hero-content.text-and-btn{
+        grid-row-gap: 1rem;
+        padding-top: 10%;
+        width: 100%;
+        height: 45%;
+    }
+    .text-and-btn h1{
+        margin-top: 0;
+    }
+    .text-and-btn h2{
+        margin-bottom: 1.5rem;
+    }
+    .text-and-btn .hero-btn{
+        width: 230px;
+    }
+    .text-and-btn .hero-btn button{
+        padding: 10px 18px;
+        font-size: .8rem;
+    }
+    .advater img {
+        height: 80%;
+        left: -14%;
+    }
+    
+    /* responsive deisgn for about me section for small screen size */
+    .about-img img{
+        height: 100%;
+        width: 100%;
+    }
+    .about-container .about-text-and-btn{
+        grid-row-gap: 3rem;
+        margin-left: 5%;
+    }
+    .about-text-and-btn h3{
+        margin-bottom: -3%;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .about-text-and-btn p{
+        width: 20rem;
+    }
+    .about-text-and-btn button{
+        padding: 10px 18px;
+        font-size: .8rem;
+    }
+
+     /* skills section for small screen size */
+     .skills-container{
+        justify-content: start;
+        align-items: center;
+      }
+      .skills-container .skill-content{
+        margin-top: -5%;
+        width: 80%;
+      }
+      .skill-content h3{
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .skill-content .skill-bar{
+        height: 4rem;
+        grid-row-gap: .2rem;
+    }
+     .skills-container .skill-img{
+        align-items: top;
+    }
+    .skill-img img{    
+        height: 64%;
+    }
+
+    /* responsive design for project stools small screen size */
+    .project-stools-container .project-stools-grid{
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(4, 10%);
+          padding-top: 1rem;
+      }
+      .project-stools-grid div img{
+        object-fit: contain;
+          width: 80%;
+      }
+
+    /* responsive design for services section  for small screen size*/
+     .services-container{
+        height: 90vh;
+    }
+    .services-container .container-title{
+        height: 6rem;
+    }
+    .services .services-content{
+        width: 35%;
+    }
+    .services-content h4{
+        font-size: 1.1rem;
+        width: 8rem;
+    }
+    .services-content p{
+        width: 10rem;
+     }
+    .services-content.first,
+    .services-content.second{
+        margin-bottom: -5%;
+    }
+
+     /* reponsive design for portfolio slider for small screen size */
+     .portfolio-container{
+        height: 25vh;
+    }
+    .portfolio-slider-container .slider-nav{
+        width: 8%;
+        height: 8%;
+        top: 45%;
+    }
+
+    
+     /* reponsive design for experience scetion for small screen size */
+     .experience-container .experience-grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 25% 25%;
+        grid-row-gap: 20%;
+        grid-column-gap: 0;
+    }
+    .experience-grid-container .experience-content{
+        grid-row-gap: 0;
+        padding-top: 4%;
+    }
+    .experience-content img{
+        height: 40%;
+    }
+
+      /* reponsive design for review slider section for small screen size */
+      .reviews-container{
+        height: 50vh;
+       }
+       .reviews-container .container-title{
+        top: 4%;
+      }
+   
+      .reviews-slides .back .review-content,
+      .reviews-slides .front .review-content{
+            height: 80%;
+            width: 80%;
+            grid-row-gap: 0;
+      }
+
+      /* slide position */
+      .reviews-slides .back .review-content{
+          top: 6%;
+      }
+      .reviews-slides .front .review-content{
+           top: -8%;
+           left: 0%;
+      }
+      .reviews-slides  .slide.right{
+         right: 13.5%;
+     }
+
+
+     /* back */
+     .reviews-slides .slide.back  .review-content img:nth-child(1){
+         height: 15%;
+      }
+      .reviews-slides .slide.back .review-content h4:nth-child(2){
+        font-weight: 400;
+        font-size: .4em;
+    }
+    .reviews-slides .slide.back .review-content h4:nth-child(3){
+      font-size: .2em;
+      margin-top: 2%;
+    }
+    .reviews-slides .slide.back .review-content .review-icon{
+        height: 7%;
+    }
+    .reviews-slides .slide.back  .review-content p{
+        font-size: 0.2rem;
+    }
+
+      /* front */
+      .reviews-slides .slide.front::after{
+         width: 100%;
+         height: 60%;
+         top: 15%;
+         left: 6%;
+      }
+     .reviews-slides .slide.front  .review-content img:nth-child(1){
+         margin-top: 15%;
+         height: 18%;
+      }
+      .reviews-slides .slide.front .review-content h4:nth-child(2){
+        font-weight: 400;
+        font-size: .8em;
+    }
+    .reviews-slides .slide.front .review-content h4:nth-child(3){
+      font-size: .8em;
+      margin-top: 2%;
+    }
+    .reviews-slides .slide.front .review-content .review-icon{
+        height: 8%;
+    }
+     .reviews-slides .slide.front  .review-content p{
+         margin-top: 0%;
+         margin-left: -8%;
+         font-size: .55rem;
+      }
+
+      
+    /* reponsive design for blog content for small screen size */
+     .blogs-container{
+        height: 90vh;
+        grid-gap: 0rem;
+    }
+    
+    .blogs-container .container-title{
+        top: 0%;
+        height: 5%;
+    }
+     .blog .blog-content{
+        width: 16rem;
+        justify-content: center;
+    }
+    .blog .blog-content.first,
+    .blog .blog-content.second{
+        margin-bottom: -20%;
+     }
+     .blog .blog-content.last{
+        margin-top: -5%;
+     }
+    .blog .blog-content img{
+        height: 35%;
+    }
+    .blog .blog-content p{
+        font-size: 0.6em;
+    }
+    .blog .blog-content .blog-text{
+        font-size: .9em;
+    }
+
+    
+    /* reponsive design for contact content for small screen size */
+    footer .contact-container{
+        height: 70vh;
+    }
+    .contact-container .contact-img{
+        height: inherit;
+        align-items: start;
+    }
+    .contact-img img{
+        width: 90%;
+    }
+    .contact-content .social-media-icons img{
+        width: 20%;
+    }
+    .contact-content form button{
+        height: 40px;
+    }
+
+  
+  
+
+}
+
+
+/* responsive design for middle screen size */
+@media (min-width: 767.99px) and (max-width: 991.99px) {
+
+    /* globa for middle screen size*/
+     h1{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    h3{
+        font-size: 1.6em;
+    }
+    button{
+        font-size: .8em;
+    }
+    p{
+        font-size: .9em;
+    }
+    h4{
+        font-size: 1.6em;
+    }
+
+
+    
+    /* nav list */
+    nav ul a:nth-child(1){
+        padding-left: 1.5rem;
+    }
+    nav ul a:nth-child(2){
+        padding-left: 1.6rem;
+    }
+    nav ul a:nth-child(3){
+        padding-left: 1rem;
+    }
+
+    nav ul a:nth-child(6){
+        padding-left: 1rem;
+    }
+  
+    nav ul a li{
+        font-size: .8em;
+        text-align: start;
+    }
+
+    /* hero section for middle screen size*/
+    .hero-content.text-and-btn{
+        grid-row-gap: 1rem;
+        padding-top: 3rem;
+        width: 100%;
+        height: 45%;
+    }
+    .text-and-btn h1{
+        margin-top: 0;
+    }
+    .text-and-btn h2{
+        margin-bottom: 1.5rem;
+    }
+    .advater img {
+        height: 90%;
+        left: -14%;
+    }
+    /* about section for middle sreen size */
+    .about-text-and-btn h3{
+        margin-bottom: -3%;
+     }
+
+    /* skills section for middle screen */
+    
+    .skills-container .skill-img{
+        align-items: end;
+    }
+    .skill-img img{    
+        height: 76%;
+    }
+
+     /* project tools section */
+    .project-stools-grid div img{
+        height: 40%;
+    }
+
+
+     /* responsive design for services section  for middle screen size*/
+
+    .services-container{
+        height: 100vh;
+    }
+    .services-container .container-title{
+        height: 6rem;
+    }
+    .services .services-content{
+        width: 32%;
+    }
+    .services-content h4{
+        font-size: 1.1rem;
+        width: 8rem;
+    }
+    .services-content p{
+        width: 10rem;
+     }
+    .services-content.first,
+    .services-content.second,
+    .services-content.third{
+        margin-top: 1%;
+    }
+
+     /* reponsive design for portfolio slider for middle screen size */
+     .portfolio-container{
+        height: 40vh;
+    } 
+    
+      /* reponsive design for review slider section for middle screen size */
+      .reviews-container{
+        height: 60vh;
+       }
+       .reviews-container .container-title{
+        top: 5%;
+      }
+
+   
+      .reviews-slides .back .review-content,
+      .reviews-slides .front .review-content{
+            height: 90%;
+            width: 80%;
+            left: 0%;
+            grid-row-gap: 0;
+      }
+      .reviews-slides .back .review-content{
+        top: 6%;
+      }
+      .reviews-slides .front .review-content{
+           top: -6%;
+      }
+   
+ 
+      .reviews-slides  .slide.right{
+         right: 13.5%;
+     }
+     .reviews-slides .slide.back  .review-content img:nth-child(1){
+         height: 15%;
+      }
+      .reviews-slides .slide.back .review-content h4:nth-child(2){
+        font-weight: 400;
+        font-size: .4em;
+    }
+    .reviews-slides .slide.back .review-content h4:nth-child(3){
+      font-size: .2em;
+      margin-top: 2%;
+    }
+    .reviews-slides .slide.back .review-content .review-icon{
+        height: 7%;
+    }
+      .reviews-slides .slide.back  .review-content p{
+         font-size: 0.25rem;
+      }
+      
+ 
+      .reviews-slides .slide.front::after{
+         width: 100%;
+         height: 78%;
+         top: 5%;
+         left: 6%;
+      }
+     .reviews-slides .slide.front  .review-content img:nth-child(1){
+         margin-top: 0;
+         height: 18%;
+      }
+      .reviews-slides .slide.front .review-content h4:nth-child(2){
+        font-weight: 400;
+        font-size: .9em;
+    }
+    .reviews-slides .slide.front .review-content h4:nth-child(3){
+      font-size: .8em;
+      margin-top: 2%;
+    }
+    .reviews-slides .slide.front .review-content .review-icon{
+        height: 8%;
+    }
+     .reviews-slides .slide.front  .review-content p{
+         margin-top: 0%;
+         font-size: .6rem;
+      }
+
+    /* reponsive design for blog content for middle screen size */
+     .blogs-container{
+        height: 110vh;
+        grid-gap: 0;
+    }
+    .blogs-container .container-title{
+        top: 0%;
+    }
+     .blog .blog-content{
+        width:  20rem;
+    }
+    .blog .blog-content.first,
+    .blog .blog-content.second{
+        margin-top: 20%;
+        aspect-ratio: 4/4.5;
+     }
+    .blog .blog-content img{
+        height: 40%;
+    }
+    
+
+    /* reponsive design for contact content for middle screen size */
+    .contact-img img{
+        width: 100%;
+    }
+    .contact-content .social-media-icons img{
+        width: 15%;
+    }
+
+}
+
+
+/* responsive design for large sreens size*/
+@media (min-width: 992px) and (max-width: 1349.99px) {
+
+    /* responsive design for about me section for large screen */
+    .about-text-and-btn {
+       margin-bottom: -5%;
+     }
+     .about-text-and-btn h3{
+       margin-bottom: -3%;
+    }
+
+    /* responsive design for services section  for large screen size*/
+    .services-container{
+        height: 100vh;
+    }
+    .services-container .container-title{
+        height: 6rem;
+    }
+
+    /* reponsive design for portfolio slider for large screen size */
+    .portfolio-container{
+        height: 50vh;
+    }
+
+     /* reponsive design for review slider section for large screen size */
+     .reviews-slides .back .review-content
+     /* .reviews-slides .front .review-content */{
+         height: 75%;
+         grid-row-gap: 0;
+     }
+
+
+     .reviews-slides  .slide.right{
+        right: 13.5%;
+    }
+    .reviews-slides .slide.back  .review-content img:nth-child(1){
+        height: 15%;
+        margin-bottom: 1%; 
+     }
+     .reviews-slides .slide.back  .review-content p{
+        font-size: .1em;
+     }
+     
+
+     .reviews-slides .slide.front::after{
+        width: 100%;
+        height: 83%;
+        top: 2%;
+        left: 6%;
+     }
+    .reviews-slides .slide.front  .review-content img:nth-child(1){
+        margin-top: -10%;
+     }
+    .reviews-slides .slide.front  .review-content p{
+        margin-top: -5%;
+     }
+
+
+     /* reponsive design for blog content for large screen size */
+     .blogs-container{
+        height: 60vh;
+    }
+     .blog .blog-content{
+        width: 17.5rem;
+        justify-content: center;
+    }
+    .blog .blog-content img{
+        height: 40%;
+    }
+
+
+    /* reponsive design for contact content for large screen size */
+
+   .contact-content .social-media-icons img{
+        width: 15%;
+    }
+
+
+}

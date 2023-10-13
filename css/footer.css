@@ -1,0 +1,106 @@
+footer .contact-container{
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap-reverse !important;
+}
+.contact-container .contact-img,
+.contact-container .contact-content{
+    flex: 1 0;
+} 
+.contact-container .contact-img{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.contact-img img{
+     width: 55%;
+     object-fit: cover;
+}
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: inherit;
+}
+.contact-content .container-title{
+    display: flex;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+.contact-content .container-title h3{
+    color: var(---color-white);
+}
+.contact-content form{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-family: var(---lexend);
+    font-size: 1em;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+.contact-content form label,
+.contact-content form input,
+.contact-content form textarea,
+.contact-content form button{
+    width: 100%;
+    flex-shrink: 0;
+}
+.contact-content form input,
+.contact-content form textarea{
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    border:  1px solid var(---color-white);
+    background-color: rgba(0, 0, 0 , 0);
+}
+.contact-content form label{
+    margin-bottom: .5rem;
+}
+.contact-content form input{
+    height: 25px;
+    padding: 13px;
+}
+.contact-content form input::placeholder,
+.contact-content form textarea::placeholder{
+    color: white;
+}
+.contact-content form input:nth-child(2)::placeholder,
+.contact-content form textarea::placeholder{
+    text-transform: capitalize;
+}
+.contact-content form input:focus,
+.contact-content form textarea:focus{
+    outline-color: var(---color-white);
+}
+.contact-content form textarea{
+    height: 100px;
+    padding: 19px;
+}
+.contact-content form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    gap: 30px;
+    color: var(---color-lightblue);
+    border-radius: 5px;
+    border: 1px solid var(---color-lightblue);
+    background: var(---color-white);
+    text-transform: uppercase ;
+}
+.contact-content form button img{
+    width: 6%;   
+    object-fit: cover;
+} 
+.contact-content .social-media-icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact-content .social-media-icons img{
+    width: 10%;
+    padding: 0.5rem 1rem;
+    object-fit: cover;
+}

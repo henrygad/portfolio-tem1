@@ -1,0 +1,77 @@
+.portfolio-container{
+    justify-content: center;
+    align-items: center;
+    background-color: var(  ---color-lightbrown);
+    flex-wrap: nowrap !important;
+}
+
+/* code with silimaritie */
+.portfolio-container .portfolio-slider-container,
+.portfolio-slider-container .project-slides{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.project-slides .slide,
+.portfolio-slider-container .slider-nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: grid;
+    place-items: center;
+}
+.project-slides .slide.front img,
+.project-slides .slide.back img,
+.portfolio-slider-container .slider-nav img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* end of code with silimarities */
+
+.portfolio-container .portfolio-slider-container{
+    flex: 1 0;
+    height: 80%;
+    overflow: hidden;
+}
+.portfolio-slider-container .project-slides{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.project-slides .slide.back{
+    width: 20%;
+    min-height: 30%;
+}
+/* using js move 35% form the left to the center*/
+.project-slides .slide.left{
+    left: 15%;
+}
+/* using js move to the right */
+.project-slides .slide.right{
+    right: 15%;
+}
+/* using js move 65% from left to the right */
+.project-slides .slide.center{
+    left: 50%;
+}
+.project-slides .slide.front{
+    width: 40%;
+    min-height: 60%;
+    transform: translateX(-50%) translateY(-50%) ;
+    z-index: 1;
+}
+.portfolio-slider-container .slider-nav{
+    width: 5%;
+    height: 5%;
+    z-index: 1;
+}
+.portfolio-slider-container .slider-nav.previous{
+    left: 8%; 
+}
+.portfolio-slider-container .slider-nav.next{
+    right: 8%;
+}
+.portfolio-slider-container .slider-nav img{
+    cursor: pointer;
+}

@@ -1,0 +1,64 @@
+.hero-container{
+    background-color: var(---color-lightbrown);
+    margin-top: 3.4rem;
+    padding-right: 0 !important ;
+}
+
+/* code with similarity */
+.hero-content.text-and-btn,
+.text-and-btn .hero-btn{
+    display: flex;
+    align-items: start;
+} 
+
+
+/* hero text and button */
+.hero-content.text-and-btn{
+    width: 40%;
+
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: start;
+    grid-row-gap: 1rem;
+} 
+.text-and-btn h1{
+    margin-top: 12rem;
+}
+.text-and-btn h2{
+    margin-bottom: 3rem;
+}
+.text-and-btn h2 span{
+    color: var(---color-fulltrans);
+    margin-right: 10px ;
+}
+.text-and-btn .hero-btn{
+    justify-content: space-between;
+    width: 290px;
+}
+.hero-btn button:nth-child(1){
+    color: var(---color-white);
+    background-color: var(---color-lightblue);
+}
+.hero-btn button:nth-child(2){
+    color: var(---color-lightblue);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/*hero  advater*/
+.advater{
+    flex: 1 0;
+    justify-content: center;
+    background-image: url('cssimages/rectagle.svg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.advater img {
+    position: relative;
+    object-fit: cover;
+    height: 100%;
+    top: 0;
+    left: -20%;
+    bottom: 0;
+}

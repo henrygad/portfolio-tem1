@@ -1,0 +1,25 @@
+.experience-container{
+    height: 30vh !important;
+    justify-content: center;
+    align-items: center;
+    background-color: var( ---color-darkerblue);
+}
+.experience-container .experience-grid-container{
+    flex:1 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100%;
+}
+.experience-grid-container .experience-content{
+    display: grid;
+    grid-row-gap: 6%;
+    place-items: center;
+    padding-top: 1%;
+}
+.experience-content h4{
+    color: var(---color-white);
+}
+.experience-content img{
+    height: 50%;
+    object-fit: cover;
+}
