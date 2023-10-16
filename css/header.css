@@ -47,17 +47,17 @@ nav ul{
     grid-column-gap: 2%;
     text-transform: uppercase;
 }
-nav ul a {
+nav ul li {
     flex: 1 0;
     height: inherit;
     padding: .5rem 0;
     display: grid;
     place-items: center;
-    text-decoration: none;
-}
-nav ul a li{
-    text-align: center;
     list-style: none;
+}
+nav ul li a{
+    text-align: center;
+    text-decoration: none;
     font-family: var(---lexend);
     font-size: 1.1em;
     font-weight: 600;

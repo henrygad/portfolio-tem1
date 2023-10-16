@@ -200,10 +200,9 @@
     nav ul{
         display: none;  
        }
-    .toggle-nav:hover ~ ul{
+    nav .toggle-ul {
         position: absolute;
         top: 0;
-        left: -25%;
         bottom: 0;
         height: 100vh;
         width: 50%;
@@ -216,11 +215,11 @@
        justify-content: start;
 
      }
-     .toggle-nav:hover ~ ul a{
+     .toggle-ul li{
         flex: 0 0 8%;
         width: 100%;
     }
-    .toggle-nav:hover ~ ul a li{
+    .toggle-ul li a{
         width: 80%;
         text-align: start;
     }
@@ -378,9 +377,9 @@
            top: -8%;
            left: 0%;
       }
-      .reviews-slides  .slide.right{
+     /*  .reviews-slides  .slide.right{
          right: 13.5%;
-     }
+     } */
 
 
      /* back */
@@ -513,23 +512,8 @@
 
     
     /* nav list */
-    nav ul a:nth-child(1){
-        padding-left: 1.5rem;
-    }
-    nav ul a:nth-child(2){
-        padding-left: 1.6rem;
-    }
-    nav ul a:nth-child(3){
-        padding-left: 1rem;
-    }
-
-    nav ul a:nth-child(6){
-        padding-left: 1rem;
-    }
-  
-    nav ul a li{
-        font-size: .8em;
-        text-align: start;
+    nav ul li a{
+        font-size: .7em;
     }
 
     /* hero section for middle screen size*/
@@ -622,9 +606,9 @@
       }
    
  
-      .reviews-slides  .slide.right{
+     /*  .reviews-slides  .slide.right{
          right: 13.5%;
-     }
+     } */
      .reviews-slides .slide.back  .review-content img:nth-child(1){
          height: 15%;
       }
@@ -734,9 +718,9 @@
      }
 
 
-     .reviews-slides  .slide.right{
+    /*  .reviews-slides  .slide.right{
         right: 13.5%;
-    }
+    } */
     .reviews-slides .slide.back  .review-content img:nth-child(1){
         height: 15%;
         margin-bottom: 1%; 

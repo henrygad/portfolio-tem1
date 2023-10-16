@@ -27,26 +27,26 @@ button span{
     box-shadow: 0 1px 1px 1px rgba(0, 0 , 0 , 0.1);
     transition: transform 0.15s ease-in-out;
 }
-button:hover{
+.toggle-effect{
     grid-row-gap: 0;
 }
-button:hover span{
+.toggle-effect span{
     position: absolute;
 }
-button:hover span:nth-child(1),
-button:hover span:nth-child(3){
+.toggle-effect span:nth-child(1),
+.toggle-effect span:nth-child(3){
     z-index: -1;
     width: 40%;
 }
-button:hover span:nth-child(1){
+.toggle-effect span:nth-child(1){
     bottom: 46%;
     transform: rotate(-45deg) translatex(-49%);
 }
- button:hover span:nth-child(2){
+ .toggle-effect span:nth-child(2){
     transform: rotate(45deg);
     z-index: 100;
  }
-button:hover span:nth-child(3){
+.toggle-effect span:nth-child(3){
     top: 46%;
     transform: rotate(-45deg)  translateX(49%);
 }

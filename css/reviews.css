@@ -10,12 +10,12 @@
     transform: translateY(-50%);
     display: grid;
     place-items: center;
+    transition: all 1s ease-in-out;
     }
     .reviews-slides  .slide.back{
         width: 20%;
         min-height: 40%;
         top: 40%;
-       /*  background-color: blue; */
     }
     .reviews-slides .slide.back::after,
     .reviews-slides .slide.back::before,
@@ -97,20 +97,36 @@
         justify-content: center;
         align-items: center;
    }
- 
-    /* using js move 35% form the left to the center*/
-    .reviews-slides  .slide.left{
-        left: 15%;
+
+   /* left slide initial position */
+   .reviews-slides  .slide.left{
+       left: 15%;
+       z-index: -1;
+   }
+    /* using js move left slide 35% form the left to the center*/
+    .reviews-slides  .slide.move-center{
+        left: 35%;
+        transition-delay: .2s;
     }
     
-    /* using js move to the right */
+    /* right slide initial position */
     .reviews-slides  .slide.right{
-        right: 15%;
+        left: 65%;
+        z-index: -1;
+    }
+    /* using js move right slide 15% to the left */
+    .reviews-slides  .slide.move-left{
+        left: 15%;
     }
    
-    /* using js move 65% from left to the right */
+    /* center slide initial position */
     .reviews-slides  .slide.center{
         left: 50%;
+    }
+    /* using js move center slide  65% from left to the right */
+    .reviews-slides  .slide.move-right{
+        left: 65%;
+        transition-delay: .1s;
     }
     
 
@@ -153,7 +169,6 @@
         top: 50%;
         transform: translateX(-50%) translateY(-50%) ;
         z-index: 1;
-        /* background-color: red; */
     }
     .reviews-slides .slide.front::after{
         width: 100%;

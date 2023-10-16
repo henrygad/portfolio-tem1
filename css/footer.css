@@ -91,6 +91,7 @@ footer .contact-container{
     text-transform: uppercase ;
 }
 .contact-content form button img{
+    position: relative;
     width: 6%;   
     object-fit: cover;
 } 

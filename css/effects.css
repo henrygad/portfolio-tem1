@@ -1,10 +1,24 @@
 /* navication effect */
-nav ul a:hover li{
+nav .toggle-ul {
+    animation: toggle-move 1s ease-in-out 1 forwards;
+ }
+@keyframes toggle-move {
+    0%{
+        left: 50%;
+        opacity: 0;
+    }100%{
+        left: -25%;
+        opacity: 1;
+    }
+
+    
+ }
+nav ul li a:hover{
     width: 70%;
     border-radius: 4px;
     border-bottom: 5px solid var( ---color-lightblue);
 }
-nav ul a:active li{
+nav ul li a:active{
     width: 100%;
     border-radius: 4px;
     border-bottom: 0;
@@ -41,5 +55,21 @@ nav ul a:active li{
 }
 .contact-content form button:active {
   color: var(---color-lightblue);
-  background-color: var(---color-white) ;
+  background-color: var(---color-white);
 }
+.contact-content form button .animate-image{
+   animation: moveimage 1s ease-in-out forwards;
+  }
+
+  @keyframes moveimage {
+    0%{
+       top: 0;
+       right: 0;
+
+    } 100%{
+        top: -1000%;
+        right: -50%;   
+    }
+    
+  }
+

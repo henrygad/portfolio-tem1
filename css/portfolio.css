@@ -19,6 +19,7 @@
     transform: translateY(-50%);
     display: grid;
     place-items: center;
+    transition: all 1s ease-in-out;
 }
 .project-slides .slide.front img,
 .project-slides .slide.back img,
@@ -43,24 +44,46 @@
     width: 20%;
     min-height: 30%;
 }
-/* using js move 35% form the left to the center*/
+
+/* left slide initial position */
 .project-slides .slide.left{
     left: 15%;
+    z-index: -1;
 }
-/* using js move to the right */
+/* using js move left slide  to 35% form the left to the center*/
+.project-slides .slide.move-center{
+    left: 35%;
+    transition-delay: .2s;
+}
+/*  right slider initial position */
 .project-slides .slide.right{
-    right: 15%;
+    left: 65%;
+    z-index: -1;
 }
-/* using js move 65% from left to the right */
+/* using js move right slide to 15% to the left */
+.project-slides .slide.move-left{
+    left: 15%;
+} 
+
+/* front slide initial position*/
 .project-slides .slide.center{
     left: 50%;
 }
+/* using js move center slide to 65% from left to the right */
+.project-slides .slide.move-right{
+    left: 65%;
+    transition-delay: .1s;
+}
+
+/* front slide design */
 .project-slides .slide.front{
     width: 40%;
     min-height: 60%;
     transform: translateX(-50%) translateY(-50%) ;
     z-index: 1;
 }
+
+
 .portfolio-slider-container .slider-nav{
     width: 5%;
     height: 5%;
